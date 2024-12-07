@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f0f0f0 0%, #e0e0e0 100%);
+    color: #333;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+
+
+form {
+    width: 100%;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-container, .signupform-container {
+    background: rgba(255, 255, 255, 0.95);
+    width: 450px;
+    min-height: 500px; /* Minimum height adjusted for smaller forms */
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    transition: all 0.3s ease; /* Smooth resizing */
+}
+
+.signupform-container {
+    min-height: 800px; /* Larger minimum height for signup form */
+}
+
+input[type="text"][name="fName"],
+input[type="text"][name="lName"],
+input[type="password"],
+input[type="email"]
+{
+    width: 90%; /* Make inputs take 90% of form-container width */
+    margin: 10px 0; /* Add margin top and bottom for spacing */
+    padding: 12px; /* Add padding for better text visibility */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #007aff;
+}
+
+/* Common styles for both buttons */
+.btn {
+    width: 90%;
+    padding: 12px;
+    margin-top: 20px; /* Add more space above the button */
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+}
+
+/* Specific styles for the Sign Up button */
+.sign-up-btn {
+    background: #007aff; /* Blue background for Sign Up */
+}
+
+/* Specific styles for the Sign In button */
+.sign-in-btn {
+    background: #5c5c5c; /* Gray background for Sign In */
+}
+
+/* Hover effects for both buttons */
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+.btn:hover {
+    background: #0051c7;
+}
+
+.or {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.or {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Added more space around the OR text */
+    font-size: 1rem;
+}
+
+
+.links {
+    text-align: center; /* Center aligns the content */
+    margin-top: 20px; 
+}
+
+#signInButton {
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block; /* Makes the button a block element */
+    width: auto; /* Auto width according to the content */
+    margin: 10px auto; /* Centers the button and adds space around it */
+}
+
+#signInButton:hover {
+    background-color: #005ecb;
+    transform: scale(1.05);
+}
+
+#signInButton:focus {
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.5);
+}
+
+#signUpButton {
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block; /* Makes the button a block element */
+    width: auto; /* Auto width according to the content */
+    margin: 10px auto; /* Centers the button and adds space around it */
+}
+
+#signUpButton:hover {
+    background-color: #005ecb;
+    transform: scale(1.05);
+}
+
+#signUpButton:focus {
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.5);
+}
+
+.join-banner{
+    width: 100%;
+    height: 80px;
+    padding: 1rem;
+    background-color: #B8B8B8;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+}
+footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+}

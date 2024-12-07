@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 1800px;
+    max-height: 1800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.sliderinfo {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensures all children (plans) stretch to fill the parent container */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows plans to wrap on smaller screens */
+}
+
+
+/* Pagination Specific Style */
+.swiper-pagination {
+    padding-top: 20px; /* Increase padding to push it lower */
+    position: relative; /* Ensures it positions relative to its normal flow */
+}
+
+/* Enhancing Visibility of Dots */
+.swiper-pagination-bullet {
+    background: #007BFF; /* Themed color for visibility */
+    width: 12px; /* Bigger for easy clicking */
+    height: 12px; /* Keep it circular */
+    opacity: 0.7; /* Slightly transparent for a softer look */
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1; /* Fully opaque for the active dot */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #007BFF;
+}
+
+.subscription-plans h2,
+.features h2,
+.testimonials h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.plans {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensures all children (plans) stretch to fill the parent container */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows plans to wrap on smaller screens */
+}
+
+/* Specific styles for each plan image */
+.basic-plan-img {
+    width: 70px; /* Smaller than the other plans */
+    height: auto;
+}
+
+.premium-plan-img {
+    width: 60px; /* Medium size */
+    height: auto;
+}
+
+.plus-plan-img {
+    width: 80px; /* Largest image */
+    height: auto;
+    margin-top: 0px; /* Moves the image up */
+    position: relative; /* Required to set z-index */
+    z-index: 40;
+}
+
+.plan h3, .plan p {
+    text-align: center; /* Centers text within the plan cards */
+}
+
+.plan {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 300px; /* Allows flexibility in width but not smaller than 300px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content spaced out */
+    align-items: center; /* Centers everything horizontally */
+    margin: 10px;
+    min-height: 320px; /* Minimum height for all plan cards */
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e0e0e0;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .plans {
+        justify-content: center;
+    }
+
+    .plan {
+        flex: 1 1 90%; /* Adjusts the size of the cards to take more space on smaller screens */
+    }
+}
+
+.features, .testimonials {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1 1 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.features h2, .testimonials h2 {
+    color: #007BFF;
+}
+
+.testimonials p {
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about{
+
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    
+}
+
+/* Adjust the style for mobile responsiveness */
+@media (max-width: 768px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex: 1 1 90%;
+    }
+}
+
+
+.contact {
+    width: 100%;            /* Full width within the container */
+    max-width: 600px;       /* Maximum width of the contact section */
+    margin-top: 20px;       /* Margin top */
+    padding: 20px;          /* Padding inside the contact section */
+    background: #ffffff;    /* White background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 8px;     /* Rounded corners */
+    text-align: center;
+}
